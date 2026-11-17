@@ -1,0 +1,31 @@
+# Never commit these — quarantine + secrets guardrails for the public repo
+.env
+*.env
+**/.env
+*credentials*
+*secret*
+*.pem
+*.key
+
+# Model weights and large binaries — never in the repo
+*.gguf
+*.safetensors
+*.bin
+*.pt
+
+# Bounty material — QUARANTINED, never public
+# (trajectories, findings, target URLs, auth, PoCs, logs)
+*trajector*
+*findings*
+*findings.json
+*.log
+*target*.md
+*target*.txt
+*poc*
+*exploit*chain*
+
+# Local lab state
+*.db
+*.sqlite
+node_modules/
+__pycache__/
